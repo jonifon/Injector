@@ -1,11 +1,13 @@
 [package]
 name = "injector"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
+
+authors = ["bytearray"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [package.metadata.windows]
 requested-execution-level = "requireAdministrator"
 
 [dependencies]
-winapi = { version = "0.3.9", features = [ "memoryapi", "processthreadsapi", "libloaderapi"] }
+winapi = { version = "0.3.9", features = [ "handleapi", "memoryapi", "processthreadsapi", "libloaderapi"] }
